@@ -1,0 +1,26 @@
+--create a clothing store database
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, color TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO clothes VALUES (1, "shoes", "purple", 3.33, 5);
+INSERT INTO clothes VALUES (2, "pants", "blue", 4.44, 5);
+INSERT INTO clothes VALUES (3, "short sleeves", "white", 5.55, 5);
+INSERT INTO clothes VALUES (4, "mittens", "yellow", 7.77, 5);
+INSERT INTO clothes VALUES (5, "socks", "black", 1.11, 5);
+INSERT INTO clothes VALUES (6, "shorts", "teal", 11.11, 5);
+INSERT INTO clothes VALUES (7, "dresses", "pink", 8.90, 5);
+INSERT INTO clothes VALUES (8, "belt", "grey", 2.34, 5);
+INSERT INTO clothes VALUES (9, "earrings", "silver", 34.56, 5);
+INSERT INTO clothes VALUES (10, "long sleeve", "tan", 24.56, 5);
+INSERT INTO clothes VALUES (11, "bra", "orange", 12.34, 5);
+INSERT INTO clothes VALUES (12, "underwear", "brown", 5.67, 5);
+INSERT INTO clothes VALUES (13, "tank tops", "red", 6.78, 5);
+
+SELECT * FROM clothes;
+
+--display the database ordered by price.
+SELECT * FROM clothes ORDER BY price;
+
+--what is the total amount of items the store has 
+SELECT SUM(quantity) FROM clothes; 
+
