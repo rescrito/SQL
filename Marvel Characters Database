@@ -42,6 +42,8 @@ INSERT INTO marvels VALUES(26, "Professor X", 58, "Good", "Male", 1.83, 86, "EUA
 
 SELECT * FROM marvels;
 
+--display the database ordered by alignment and strenghth
 SELECT name FROM marvels WHERE (alignment="Good"AND strength>5);
 
+--which marvel characters average in weight below 100kg 
 SELECT name, AVG(weight_kg) as avg_weight FROM marvels GROUP BY name HAVING avg_weight<100
